@@ -1,0 +1,105 @@
+/* styles.css */
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+
+  /* styles.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .hi{
+    text-align: center;
+    display: flex;
+    align-content: center;
+  }
+  .timer{
+    font-size: 50px;
+  }
+  
+  .animation {
+    font-size: 26px;
+    animation: popUp 3s ease-in-out; /* Adjust duration to 1s */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
+  }
+
+h2{
+  font-size: 50px;
+  font-family: Brush Script MT;
+}
+
+  .message {
+    margin-top: 20px; /* Adjust margin to separate from 'hi' */
+    font-size: 18px;
+    animation: fadeIn 5s ease-out; /* Adjust duration to 2s */
+  }
+  
+  .memories{
+    margin-top: 20px;
+    animation: popUp 1s ease-in-out; /* Adjust duration to 2s */
+  
+  }
+
+  .buttonMemories{
+    border: 1px solid pink;
+  }
+  
+  .fireworks-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .firework {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    animation: explode 1s ease infinite;
+  }
+  
+  @keyframes explode {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(10);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes popUp {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
